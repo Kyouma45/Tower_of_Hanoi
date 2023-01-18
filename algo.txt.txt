@@ -1,0 +1,22 @@
+global variables: 
+				STACK:	A, B, C (TO TRANSFER ELEMENTS FROM STACK A TO C)
+				INTEGER:	COUNT(TO STORE THE NUMBER OF STEPS
+VARIABLES:
+				INTEGER:N(TO STORE SIZE)
+
+
+
+step-1: user INPUTS N
+
+step-2: numbers from 1-N are filled in stack A
+
+step-3: stack A, stack B, stack C and N are set as parameters for the function "solution"
+
+step-4: Solution INCREMENTS COUNT by 1 and calls the function "solution" again with parameters A,C,B,N-1 to get numbers 1 to N-1 in stack B
+
+step-6: once stack b is returned with values 1 to N-1, N is sent to stack C and stack A is emptied and COUNT is incremented by 1
+
+step-7:then "solution" is called again with parameters B,A,C,N-1
+
+STEP-8:When the values are returned 1-N are already present in stack c number of steps taken to get this solution is stored in global variable COUNT.
+
