@@ -1,0 +1,5 @@
+takes input n:no.of disks from the user
+function_name(n,a,c,b)  #move nth disk from a to c using b
+  function_name(n-1,a,b,c)  #move (n-1)th disk from a to b using c recursivly
+  function_name(n,a,c,b)
+  function_name(n-1,b,c,a)  #move n-1)th disk from b to c using a recursively
